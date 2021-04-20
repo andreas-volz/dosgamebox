@@ -28,7 +28,7 @@ This software design allows a flexible solution to the problem that DOS games te
 Those aplication features could be realized later:
 - Automatic remove "upperdir" files after game exists => always start clean
 - Support different "upperdir" sets and so allow some sort of game configurations (e.g. different users or patch sets)
-- Easy reset to initial state after you or the Game itself messed everything up
+- Easy reset to initial state after you or the game itself messed up everything
 
 Example /etc/fstab extension:
 - overlay /media/TVStation/RetroPie/roms/pcdata/overlay overlay noauto,x-systemd.automount,lowerdir=/media/TVStation/RetroPie/roms/pcdata/base,upperdir=/media/TVStation/RetroPie/roms/pcdata/changes,workdir=/media/TVStation/RetroPie/roms/pcdata/tmp 0 0
