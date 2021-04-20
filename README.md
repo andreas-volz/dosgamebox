@@ -19,9 +19,9 @@ I like to show my kids how cool old games from by childhood were! I often impres
 After some proof of concept implementations the design decision goes for Linux OverlayFS feature.
 This feature consists of logic overlaying two folders ("lowerdir" and "upperdir") to a new directory ("workdir").
 The mapping for DOSBox sandboxing is as following:
-lowerdir = Initial installed/configured DOS game
-upperdir = Empty in the beginning and filled with all dynamic application changes
-workdir = An overlay combination of lowerdir and upperdir
+- lowerdir = Initial installed/configured DOS game
+- upperdir = Empty in the beginning and filled with all dynamic application changes
+- workdir = An overlay combination of lowerdir and upperdir
 This software design allows a flexible solution to the problem that DOS games tend to write their configuration or save games directly into their application data folder. The idea is one copies a fresh installed DOS game to the "lowerdir" and it could be easy reset to the install state by removing the "upperdir".
 Those aplication features could be realized later:
 - Automatic remove "upperdir" files after game exists => always start clean
