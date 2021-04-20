@@ -36,7 +36,7 @@ Example /etc/fstab extension:
 (Path setup fits to by local installation with external harddisk; this needs to be explained in detail)
 
 ### Config File Collection
-Just a DOSBox game file collection that supports the sandboxing feature and is compatible with SkyScraper[1] media scrapping. All files share some generic path concept and work only in the context of this configuration. Here is very important to add that this includes for sure only the startup configuration and no media or foreign properties. Many DOSBox games which you find somewhere in the internet contains startup config files, but they often need to be adopted to your local setup. This collection is optimized for RetorPie[3] with standalone dosbox (not lr-dosbox)
+Just a DOSBox game file collection that supports the sandboxing feature and is compatible with SkyScraper[1] media scrapping. All files share some generic path concept and work only in the context of this configuration. Here is very important to add that this includes for sure only the startup configuration and no media or foreign properties. Many DOSBox games which you find somewhere in the internet contains startup config files, but they often need to be adopted to your local setup. This collection is optimized for RetorPie[3] with standalone dosbox (not lr-dosbox). See folder "pc".
 
 ### Keyboard->Joystick Mapper
 Some (old) games need adaption to the keyboard mapper to create some more fun playing them. Some are collected here and referenced from the local game specific DOSBox configuration file.
@@ -44,9 +44,16 @@ Some (old) games need adaption to the keyboard mapper to create some more fun pl
 ### Changed RetroPie scripts
 Unfortainly I had not much success getting lr-dosbox to run with the same performance as standalone dosbox. So some (dirty) workaround (setting HDMI resultion direct) are made to get the screen resultion working for most games. Solving this problem with libretro integration or a intermediate DOSBox configuration tool (including the sandboxing support) would additional help to ease the usage.
 
+See folder "runcommand" for start/stop scripts that uses tvservice[4] tool. Maybe you need to install this tool with the RetroPie installer.
+
+A better solution could be to implement a generic solution in /opt/retropie/supplementary/runcommand/runcommand.sh and provide back to RetroPie.
+
 ## Open topics
-- Add all modified and created files to this repositiory
+- Explain all modified and created files to this repositiory
+- Do the software detail design
+- Provide easy file setup and user howto
 
 [1] https://github.com/muldjord/skyscraper
 [2] https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html
 [3] https://github.com/RetroPie
+[4] https://www.raspberrypi.org/documentation/raspbian/applications/tvservice.md
