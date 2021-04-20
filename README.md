@@ -59,6 +59,9 @@ See dosbox/dosbox-SVN.conf for an example what has to be changed. The changes in
 - Provide easy file setup and user howto
 
 [1] https://github.com/muldjord/skyscraper
+
 [2] https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html
+
 [3] https://github.com/RetroPie
+
 [4] https://www.raspberrypi.org/documentation/raspbian/applications/tvservice.md
