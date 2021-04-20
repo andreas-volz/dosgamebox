@@ -35,6 +35,8 @@ Example /etc/fstab extension:
 
 (Path setup fits to by local installation with external harddisk; this needs to be explained in detail)
 
+As this OverlayFS design solution is very stable and efficient as directly supported by the Linux kernel this is a drawback for everyone not using Linux. So this complete featue described in this repository works only with Linux (special: RaspberryPI / RetroPie).
+
 ### Config File Collection
 Just a DOSBox game file collection that supports the sandboxing feature and is compatible with SkyScraper[1] media scrapping. All files share some generic path concept and work only in the context of this configuration. Here is very important to add that this includes for sure only the startup configuration and no media or foreign properties. Many DOSBox games which you find somewhere in the internet contains startup config files, but they often need to be adopted to your local setup. This collection is optimized for RetorPie[3] with standalone dosbox (not lr-dosbox). See folder "pc".
 
