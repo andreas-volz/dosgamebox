@@ -9,12 +9,12 @@ This repository is a collector for dosbox configuration on RetroPie for those fe
 - Collect joystick mapper files for games which didn't provide joystick support in those old days
 - Changed RetroPie scripts for better doxbox integration
 
-In the chapter High Level Software Design is described how to reach this goal.
-
 ## Motivation
 I like to show my kids how cool old games from by childhood were! I often impress them because I played the inital first version of a popular todays Android game.
 
 ## High Level Software Design
+This chapter explains in principle how to reach this goal.
+
 ### Sandboxing
 After some proof of concept implementations the design decision goes for Linux OverlayFS feature.
 This feature consists of logic overlaying two folders ("lowerdir" and "upperdir") to a new directory ("workdir").
