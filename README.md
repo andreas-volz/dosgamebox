@@ -30,6 +30,11 @@ Those aplication features could be realized later:
 - Support different "upperdir" sets and so allow some sort of game configurations (e.g. different users or patch sets)
 - Easy reset to initial state after you or the Game itself messed everything up
 
+Example /etc/fstab extension:
+- overlay /media/TVStation/RetroPie/roms/pcdata/overlay overlay noauto,x-systemd.automount,lowerdir=/media/TVStation/RetroPie/roms/pcdata/base,upperdir=/media/TVStation/RetroPie/roms/pcdata/changes,workdir=/media/TVStation/RetroPie/roms/pcdata/tmp 0 0
+
+(Path setup fits to by local installation with external harddisk; this needs to be explained in detail)
+
 ### Config File Collection
 Just a DOSBox game file collection that supports the sandboxing feature and is compatible with SkyScraper[1] media scrapping. All files share some generic path concept and work only in the context of this configuration. Here is very important to add that this includes for sure only the startup configuration and no media or foreign properties. Many DOSBox games which you find somewhere in the internet contains startup config files, but they often need to be adopted to your local setup. This collection is optimized for RetorPie[3] with standalone dosbox (not lr-dosbox)
 
