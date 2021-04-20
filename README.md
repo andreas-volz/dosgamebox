@@ -48,6 +48,9 @@ See folder "runcommand" for start/stop scripts that uses tvservice[4] tool. Mayb
 
 A better solution could be to implement a generic solution in /opt/retropie/supplementary/runcommand/runcommand.sh and provide back to RetroPie.
 
+### Changes to DOSBox user configuration
+See dosbox/dosbox-SVN.conf for an example what has to be changed. The changes in chapter [sdl] are needed to fit with the resolution set by tvservice from runcommand. The changes in chapter [autoexec] have to fit with your local path setup and fstab OverlayFS configuration.
+
 ## Open topics
 - Explain all modified and created files to this repositiory
 - Do the software detail design
